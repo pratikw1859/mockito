@@ -1,17 +1,21 @@
-package com.app.service.impl;
+package com.app.business;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.app.service.TodoService;
 
-public class TodoServiceImpl {
-	
+public class TodoBusinessImpl {
 	private TodoService todoService;
 
-	TodoServiceImpl(TodoService todoService) {
+	
+
+	public TodoBusinessImpl(TodoService todoService) {
+		super();
 		this.todoService = todoService;
 	}
+
+
 
 	public List<String> retrieveTodosRelatedToSpring(String user) {
 		List<String> filteredTodos = new ArrayList<String>();
