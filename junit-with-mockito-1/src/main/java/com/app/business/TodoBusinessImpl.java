@@ -9,7 +9,6 @@ public class TodoBusinessImpl {
 	private TodoService todoService;
 	
 	public TodoBusinessImpl(TodoService todoService) {
-		super();
 		this.todoService = todoService;
 	}
 
